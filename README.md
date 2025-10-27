@@ -1,9 +1,9 @@
 #####################
-Article: Exposure to short dry phases prevents hatching of mayfly egg 
-Authors: Emmanuel Jaulin Gautronneau, Abdelkader Azougui, Antoine Callu, Hervé Capra, Maxime Logez, Hervé Pella, Maria Alp
+# Article: Exposure to short dry phases prevents hatching of mayfly egg 
+# Authors: Emmanuel Jaulin Gautronneau, Abdelkader Azougui, Antoine Callu, Hervé Capra, Maxime Logez, Hervé Pella, Maria Alp
 
-Correspondence author: Emmanuel Jaulin Gautronneau
-Email addresses: jaulinemmanuel@orange.fr
+# Correspondence author: Emmanuel Jaulin Gautronneau
+# Email addresses: jaulinemmanuel@orange.fr
 
 
 #####################
