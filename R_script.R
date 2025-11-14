@@ -178,7 +178,7 @@ ggcorrplot(differences, hc.order = FALSE,
 
 ######## 3. Figures #########################
 
-### 3.1 Figure 5
+### 3.1 Figure 6
 ggplot(dta2, aes(dry_time, prop, group = dry_timef))+
   geom_boxplot(outlier.colour =  "transparent")+
   geom_jitter(width = 0.2, alpha=0.15, size = 3)+
@@ -202,7 +202,7 @@ ggplot(dta2, aes(dry_time, prop, group = dry_timef))+
   scale_x_continuous(breaks = c(0, 1, 2, 3, 4, 5, 6, 9, 12, 18),
                      labels = c(0, 1, 2, 3, 4, 5, 6, 9, 12, 18))
 
-### 3.2 Figure S4
+### 3.2 Figure S5
 count_df <- dta2 %>%
   group_by(sub, dry_time) %>%
   summarize(count = n())
@@ -232,3 +232,4 @@ ggplot(data = dta2, aes(as.factor(sub), prop, fill = sub)) +
     axis.text.x = element_text(size = 12),
     strip.text = element_text(size = 12),
     legend.position = "none")
+
