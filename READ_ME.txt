@@ -27,4 +27,5 @@ Content of DATA
 	R file with the script to:
 				  - Calculate the hatching proportion of egg masses for dry phase durations and/or slates detailed in 				    the article
 				  - Run the generalized linear mixed model
-				  - Display Figures 5 and S4
+
+				  - Display Figures 6 and S5
