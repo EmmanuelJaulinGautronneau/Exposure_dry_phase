@@ -19,40 +19,45 @@ dta %>%
   filter(dry_time %in% c(0:5))%>%
   group_by(dry_time) %>%
   summarise(moy=round(mean(prop),2),
-            SD = round(sd(prop),3))
+            SD = round(sd(prop),2))
+
+dta %>%
+  filter(dry_time %in% c(0:5))%>%
+  summarise(moy=round(mean(prop),2),
+            SD = round(sd(prop),2))
 
 # Dry phase: 5 h for the slate 29
 dta %>%
   filter(dry_time == 5 & sub == "s29")%>%
   group_by(sub)%>%
   summarise(moy=round(mean(prop),2),
-            SD = round(sd(prop),3))
+            SD = round(sd(prop),2))
 
 # Dry phase: 6 h
 dta %>%
   filter(dry_time %in% 6)%>%
   summarise(moy=round(mean(prop),2),
-            SD = round(sd(prop),3))
+            SD = round(sd(prop),2))
 
 # Dry phase: 6 h for the slates 48, 40, 22
 dta %>%
   filter(sub %in% c("s48", "s40", "s22"))%>%
   group_by(sub) %>%
   summarise(moy=round(mean(prop),2),
-            SD = round(sd(prop),3))
+            SD = round(sd(prop),2))
 
 # Dry phases: 9 - 18 h
 dta %>%
   filter(dry_time %in% c(9:18))%>%
   summarise(moy=round(mean(prop),2),
-            SD = round(sd(prop),3))
+            SD = round(sd(prop),2))
 
 # Dry phases: 9 - 18 h with the slates 17, 35, 50
 dta %>%
   filter(sub %in% c("s17", "s35", "s50"))%>%
   group_by(sub) %>%
   summarise(moy=round(mean(prop),2),
-            SD = round(sd(prop),3))
+            SD = round(sd(prop),2))
 
 
 ######## 2. Modelling #########################
@@ -232,4 +237,3 @@ ggplot(data = dta2, aes(as.factor(sub), prop, fill = sub)) +
     axis.text.x = element_text(size = 12),
     strip.text = element_text(size = 12),
     legend.position = "none")
-
